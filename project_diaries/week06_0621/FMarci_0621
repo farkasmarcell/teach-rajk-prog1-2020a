@@ -1,0 +1,27 @@
+## Projekt állapot, tervek.
+
+#### Projektötlet leírása
+
+A koli pénzügyi nyilvántartását szeretném vizualizálni egy dashboardon. 
+Arra törekednék, hogy az adott időpontban realizált és a nagy valószinűséggel az adott év során bekövetkező kiadások, 
+illetve a várt bevételek a megjelenjenek a dashboardon.
+
+Ami körvonalazódott a projektben az az, hogy az alapítvány számlakivonata jelenti az egyik inputot. 
+Az ebben lévő tranzakciókat csoportosítom először, amihez a pandas csomagot használom és alapvetően mechanikusan a csoportosítom azokat.
+(olvastam róla, hogy ML módszerrel is szoktak ilyet csinálni, abban nem vagyok biztos h azt itt érdemes használni)
+
+Az így képzett csoportokban felmerült költségeket/bejött bevételeket tartalmazó dataframet szeretném vizualizálni dash-ben.
+
+
+##### Megvalósult:
+- Ádi megmutatta egy korábbi projektjét, a dash használatához abból indulok ki.
+- A rajkos szerveren kezdtem el csinálni a projektet, mert az alapítvány tranzakciói szenzitív adatok, a heroku/github pedig fizetős 
+ha private projektet szeretnék csinálni
+- Jelen pillanatban nem láttam értelmét, hogy drive/dropbox fájból olvassam be az inputot, de ha marad rá időm, valószínűleg ezt hozzárakom
+- A számlakivonat beolvasásával, a tranzakciók csoportosításával haladtam eddig. A feladat első fele egyszerűbb volt, most a csoportosítással foglalkozom.
+
+#### Következő hétre kitűzött célok:
+
+- tranzakciók csoportosításának befejezése
+- vizualizáció és dash app 
+
